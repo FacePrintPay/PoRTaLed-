@@ -156,5 +156,5 @@ http://ditu.amap.com/service/poiInfo?query_type=TQUERY&city=xxx&keywords=yyy&pag
 
 [微软研究院的出租车数据] (http://research.microsoft.com/apps/pubs/?id=152883)
 
-
+.
 
