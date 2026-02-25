@@ -1,0 +1,27 @@
+{
+  "platforms": {
+    "git": {
+      "enabled": true,
+      "auto_push": true,
+      "branch": "main"
+    },
+    "vercel": {
+      "enabled": true,
+      "project_name": "aikre8tive",
+      "framework": "other",
+      "build_command": "npm run build || echo 'No build needed'",
+      "output_directory": "dist",
+      "install_command": "npm install || pip install -r requirements.txt"
+    },
+    "godaddy": {
+      "enabled": false,
+      "domain": "your-domain.com",
+      "ftp_host": "ftp.your-domain.com",
+      "deployment_path": "/public_html"
+    }
+  },
+  "environment_variables": {
+    "NODE_ENV": "production",
+    "PYTHON_ENV": "production"
+  }
+}

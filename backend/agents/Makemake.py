@@ -1,0 +1,1 @@
+print('Agent Makemake operational')

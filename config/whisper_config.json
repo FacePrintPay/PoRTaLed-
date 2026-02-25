@@ -1,0 +1,17 @@
+{
+  "sync_directory": "sync_data",
+  "max_retries": 3,
+  "sync_interval": 30,
+  "agents": [
+    "Sun", "Mercury", "Venus", "Earth", "Mars", 
+    "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto",
+    "Luna", "Phobos", "Deimos", "Io", "Europa", "Ganymede", 
+    "Callisto", "Titan", "Enceladus", "Triton", "Charon",
+    "Ceres", "Eris", "Haumea", "Makemake"
+  ],
+  "whisper_model": "base",
+  "language": "auto",
+  "audio_formats": ["wav", "mp3", "m4a", "ogg"],
+  "max_audio_length": 300,
+  "batch_size": 10
+}

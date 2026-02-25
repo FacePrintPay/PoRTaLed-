@@ -1,0 +1,210 @@
+{
+  "timestamp": "2025-08-26T14:32:06.080400",
+  "total_agents": 25,
+  "healthy": 0,
+  "warnings": 25,
+  "errors": 0,
+  "missing": 0,
+  "agents": [
+    {
+      "agent": "Sun",
+      "timestamp": "2025-08-26T14:32:06.080474",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Mercury",
+      "timestamp": "2025-08-26T14:32:06.086337",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Venus",
+      "timestamp": "2025-08-26T14:32:06.088403",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Earth",
+      "timestamp": "2025-08-26T14:32:06.091068",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Mars",
+      "timestamp": "2025-08-26T14:32:06.093816",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Jupiter",
+      "timestamp": "2025-08-26T14:32:06.096698",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Saturn",
+      "timestamp": "2025-08-26T14:32:06.098233",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Uranus",
+      "timestamp": "2025-08-26T14:32:06.100755",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Neptune",
+      "timestamp": "2025-08-26T14:32:06.103500",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Pluto",
+      "timestamp": "2025-08-26T14:32:06.106838",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Luna",
+      "timestamp": "2025-08-26T14:32:06.110238",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Phobos",
+      "timestamp": "2025-08-26T14:32:06.112649",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Deimos",
+      "timestamp": "2025-08-26T14:32:06.116346",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Io",
+      "timestamp": "2025-08-26T14:32:06.119689",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Europa",
+      "timestamp": "2025-08-26T14:32:06.122927",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Ganymede",
+      "timestamp": "2025-08-26T14:32:06.125505",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Callisto",
+      "timestamp": "2025-08-26T14:32:06.128325",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Titan",
+      "timestamp": "2025-08-26T14:32:06.130871",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Enceladus",
+      "timestamp": "2025-08-26T14:32:06.134273",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Triton",
+      "timestamp": "2025-08-26T14:32:06.138056",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Charon",
+      "timestamp": "2025-08-26T14:32:06.140909",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Ceres",
+      "timestamp": "2025-08-26T14:32:06.143581",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Eris",
+      "timestamp": "2025-08-26T14:32:06.146181",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Haumea",
+      "timestamp": "2025-08-26T14:32:06.149093",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    },
+    {
+      "agent": "Makemake",
+      "timestamp": "2025-08-26T14:32:06.151563",
+      "status": "warning",
+      "errors": [
+        "Missing required attribute: main"
+      ]
+    }
+  ]
+}

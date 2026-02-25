@@ -1,0 +1,52 @@
+name: Deploy web apps to Vercel
+on:
+  push: { branches: [ main, master ] }
+  workflow_dispatch: {}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app:
+- name: console
+            cwd: apps/console
+            project_key: CONSOLE
+- name: quidpros
+            cwd: apps/quidpros
+            project_key: QUIDPROS
+- name: vers3d
+            cwd: apps/vers3d
+            project_key: VERS3D
+- name: yesquid
+            cwd: apps/yesquid
+            project_key: YESQUID
+
+    defaults:
+      run:
+        working-directory: ${{ matrix.app.cwd }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Vercel CLI
+        run: npm i -g vercel@latest
+      - name: Pull env (Vercel)
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets['VERCEL_PROJECT_ID_' + matrix.app.project_key] }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production
+      - name: Build
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod
+      - name: Deploy (prebuilt)
+        id: deploy
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          url=$(vercel deploy --prebuilt --prod)
+          echo "url=$url" >> $GITHUB_OUTPUT
+      - name: Output URL
+        run: echo "✅ Deployed ${{ matrix.app.name }} → ${{ steps.deploy.outputs.url }}"

@@ -1,0 +1,29 @@
+# AWS SDK for Python
+boto3>=1.26.0
+botocore>=1.29.0
+
+# Web Scraping and HTML Processing
+beautifulsoup4>=4.11.0
+requests>=2.28.0
+
+# Natural Language Processing
+spacy>=3.5.0
+transformers>=4.26.0
+
+# Machine Learning and Data Processing
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+
+# Code Analysis and Processing
+astroid>=2.14.0
+pylint>=2.17.0
+
+# Development and Testing
+pytest>=7.3.0
+black>=23.3.0
+mypy>=1.2.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/data/data/com.termux/files/home/aikre8tive/cpp_gateway/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

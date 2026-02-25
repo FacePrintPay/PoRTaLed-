@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: videocourts
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: videocourts
+  template:
+    metadata:
+      labels:
+        app: videocourts
+    spec:
+      containers:
+      - name: videocourts
+        image: videocourts:latest
+        ports:
+        - containerPort: 8080

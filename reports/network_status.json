@@ -1,0 +1,8 @@
+{
+  "time": "2025-09-27T11:17:33",
+  "checks": {
+    "https://1.1.1.1": "ERR:HTTP Error 403: Forbidden",
+    "https://www.google.com": 200,
+    "https://httpbin.org/ip": 200
+  }
+}

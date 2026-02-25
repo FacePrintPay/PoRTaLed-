@@ -1,0 +1,10 @@
+{
+  "agent":"Venus",
+  "timestamp":"2025-08-26T18:37:39-04:00",
+  "data":{
+    "message":"Heartbeat OK",
+    "status":"active",
+    "capabilities":["transcription","sync","monitoring"]
+  },
+  "sync_id":"Venus_1756247859"
+}

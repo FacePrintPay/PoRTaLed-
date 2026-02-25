@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaTHos Virtual Platform Documentation</title>
+    <!-- Tailwind CSS with production optimization -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2316a34a'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-code text-green-600 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">PaTHos Docs</span>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <a href="https://github.com/your-repo" target="_blank" class="text-gray-500 hover:text-gray-700">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar and Content -->
+    <div class="flex pt-16">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-lg fixed h-full overflow-y-auto">
+            <nav class="p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#overview" class="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                            <i class="fas fa-home w-6"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#architecture" class="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                            <i class="fas fa-layer-group w-6"></i>
+                            <span>Architecture</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#api" class="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                            <i class="fas fa-code w-6"></i>
+                            <span>API Reference</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#security" class="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                            <i class="fas fa-shield-alt w-6"></i>
+                            <span>Security</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#setup" class="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                            <i class="fas fa-cog w-6"></i>
+                            <span>Setup Guide</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-64 p-8">
+            <!-- Overview Section -->
+            <section id="overview" class="mb-12">
+                <h1 class="text-4xl font-bold mb-6">PaTHos Virtual Platform</h1>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+                    <p class="text-gray-600 mb-4">
+                        The PaTHos Virtual Platform is a full-stack web application that provides a modular system for executing functions with input validation and result tracking. It consists of a React frontend and Node.js/Express backend, with features including user authentication, license validation, and execution history.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-rocket text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">Quick Execution</h3>
+                            <p class="text-sm text-gray-600">Execute functions with real-time feedback and validation</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-history text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">History Tracking</h3>
+                            <p class="text-sm text-gray-600">Maintain detailed execution history and performance metrics</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-shield-alt text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">Secure Access</h3>
+                            <p class="text-sm text-gray-600">JWT authentication and license validation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture Section -->
+            <section id="architecture" class="mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">System Architecture</h2>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3">Backend Components</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-semibold">PaTHos Controller</h4>
+                                <p class="text-sm text-gray-600">Manages module registration, execution, and history tracking</p>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-semibold">API Routes</h4>
+                                <p class="text-sm text-gray-600">RESTful endpoints for authentication and PaTHos operations</p>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-semibold">Middleware</h4>
+                                <p class="text-sm text-gray-600">Authentication and license validation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Frontend Components</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-semibold">PaTHos Interface</h4>
+                                <p class="text-sm text-gray-600">Main user interface for function execution</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-semibold">Authentication Components</h4>
+                                <p class="text-sm text-gray-600">Login and registration forms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- API Reference Section -->
+            <section id="api" class="mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">API Reference</h2>
+                    <div class="space-y-6">
+                        <!-- Authentication Endpoints -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Authentication Endpoints</h3>
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="flex items-center mb-2">
+                                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm mr-2">POST</span>
+                                        <code class="text-sm">/api/auth/register</code>
+                                    </div>
+                                    <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+{
+  "username": "string",
+  "password": "string"
+}</pre>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="flex items-center mb-2">
+                                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm mr-2">POST</span>
+                                        <code class="text-sm">/api/auth/login</code>
+                                    </div>
+                                    <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+{
+  "username": "string",
+  "password": "string"
+}</pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PaTHos Endpoints -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">PaTHos Endpoints</h3>
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="flex items-center mb-2">
+                                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm mr-2">POST</span>
+                                        <code class="text-sm">/api/pathos/execute</code>
+                                    </div>
+                                    <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+{
+  "functionName": "string",
+  "input": "any",
+  "expectedOutput": "any" // optional
+}</pre>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="flex items-center mb-2">
+                                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm mr-2">GET</span>
+                                        <code class="text-sm">/api/pathos/modules</code>
+                                    </div>
+                                    <p class="text-sm text-gray-600">Returns list of available modules</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Section -->
+            <section id="security" class="mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Security Features</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-lock text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">Authentication</h3>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• Password hashing with bcrypt</li>
+                                <li>• JWT session management</li>
+                                <li>• Protected endpoints</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-key text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">License Validation</h3>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• File-based license storage</li>
+                                <li>• Header-based validation</li>
+                                <li>• Access control</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <i class="fas fa-shield-alt text-green-600 text-2xl mb-2"></i>
+                            <h3 class="font-semibold mb-2">Error Handling</h3>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li>• Generic error messages</li>
+                                <li>• Server-side validation</li>
+                                <li>• Input sanitization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Setup Guide Section -->
+            <section id="setup" class="mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Setup Guide</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Installation</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd frontend
+npm install</pre>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Environment Configuration</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+MONGO_URI=mongodb://localhost:27017/pathos
+JWT_SECRET=your-secret-key
+PORT=5000
+NODE_ENV=development</pre>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-3">Running the Application</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <pre class="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto">
+# Backend
+cd backend
+npm run dev
+
+# Frontend
+cd frontend
+npm start</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Highlight active section in sidebar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('aside a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-gray-100');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('bg-gray-100');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

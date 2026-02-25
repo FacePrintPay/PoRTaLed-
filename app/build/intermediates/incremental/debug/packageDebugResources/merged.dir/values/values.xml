@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AiMetaverse</string>
+    <style name="Theme.AiMetaverse" parent="Theme.AppCompat.Light.NoActionBar">
+        
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+</resources>

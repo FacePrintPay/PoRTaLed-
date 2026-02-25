@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaTHos Platform - Agents & Modules</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-code text-green-600 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">PaTHos Platform</span>
+                    </div>
+                    <div class="hidden md:ml-6 md:flex md:space-x-8">
+                        <a href="index.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Documentation</a>
+                        <a href="explainer.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Explainer</a>
+                        <a href="#" class="text-green-600 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Agents</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-16">
+        <div class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">PaTHos Agents & Modules</h1>
+                    <p class="text-xl text-gray-600">A comprehensive ecosystem of AI agents and modules for development, monitoring, and execution</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agent Management Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 class="text-3xl font-bold mb-8">Development & Infrastructure Agents</h2>
+            <p class="text-xl text-gray-600 mb-8">These agents form the core development and infrastructure management system of the PaTHos platform, handling everything from code generation to security and deployment.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Earth -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-globe text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Earth</h3>
+                    <p class="text-gray-600">Generates foundational code structures for the PaTHos environment</p>
+                </div>
+                <!-- Moon -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-moon text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Moon</h3>
+                    <p class="text-gray-600">Identifies and resolves syntax errors in generated code</p>
+                </div>
+                <!-- Sun -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-sun text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sun</h3>
+                    <p class="text-gray-600">Analyzes and optimizes code for performance and efficiency</p>
+                </div>
+                <!-- Mercury -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-vial text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mercury</h3>
+                    <p class="text-gray-600">Generates unit tests for code modules</p>
+                </div>
+                <!-- Venus -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-check-circle text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Venus</h3>
+                    <p class="text-gray-600">Performs automated regression testing on code changes</p>
+                </div>
+                <!-- Mars -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mars</h3>
+                    <p class="text-gray-600">Identifies and suggests potential security vulnerabilities in code</p>
+                </div>
+                <!-- Jupiter -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-book text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Jupiter</h3>
+                    <p class="text-gray-600">Analyzes and documents code for clarity and maintainability</p>
+                </div>
+                <!-- Saturn -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-sync text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Saturn</h3>
+                    <p class="text-gray-600">Automates code refactoring and modernization tasks</p>
+                </div>
+                <!-- Uranus -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-file-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Uranus</h3>
+                    <p class="text-gray-600">Generates code documentation based on natural language descriptions</p>
+                </div>
+                <!-- Neptune -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-copy text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Neptune</h3>
+                    <p class="text-gray-600">Identifies and eliminates code duplication</p>
+                </div>
+                <!-- Additional Agents -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cygnus</h3>
+                    <p class="text-gray-600">Generates code for implementing AI algorithms and models</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-desktop text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Orion</h3>
+                    <p class="text-gray-600">Analyzes and optimizes user interfaces for performance and usability</p>
+                </div>
+                <!-- More agents... -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-plug text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Andromeda</h3>
+                    <p class="text-gray-600">Generates code for integrating with external services and APIs</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-box text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Pleiades</h3>
+                    <p class="text-gray-600">Creates and manages virtual environments for development and testing</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-cloud text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sirius</h3>
+                    <p class="text-gray-600">Generates code for deploying and scaling applications in the cloud</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-code-branch text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Canis Major</h3>
+                    <p class="text-gray-600">Identifies and resolves technical debt issues in the codebase</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-infinity text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Hydra</h3>
+                    <p class="text-gray-600">Performs continuous integration and delivery (CI/CD) pipelines</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Centauri</h3>
+                    <p class="text-gray-600">Generates data pipelines for collecting and analyzing user data</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-tachometer-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Draco</h3>
+                    <p class="text-gray-600">Manages and monitors the performance of the PaTHos infrastructure</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Boötes</h3>
+                    <p class="text-gray-600">Identifies and resolves potential security incidents in the PaTHos environment</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-lock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Corona Borealis</h3>
+                    <p class="text-gray-600">Generates code for implementing safety and security measures</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-book text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Ursa Major</h3>
+                    <p class="text-gray-600">Manages and updates the PaTHos documentation</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-lightbulb text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lynx</h3>
+                    <p class="text-gray-600">Identifies and trends emerging technologies for integration</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-plus-circle text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Perseus</h3>
+                    <p class="text-gray-600">Generates code for implementing new features and functionalities</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-balance-scale text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cassiopeia</h3>
+                    <p class="text-gray-600">Ensures compliance with ethical and legal regulations</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Modules Section -->
+        <div class="bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h2 class="text-3xl font-bold mb-8">AI & Data Processing Modules</h2>
+                <p class="text-xl text-gray-600 mb-8">A comprehensive suite of AI and data processing modules that provide advanced capabilities from natural language processing to machine learning model management.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Mercury -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-language text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Mercury</h3>
+                        <p class="text-gray-600">Natural Language Processing (NLP) analysis</p>
+                    </div>
+                    <!-- Venus -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-heart text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Venus</h3>
+                        <p class="text-gray-600">Sentiment analysis and emotion detection</p>
+                    </div>
+                    <!-- Earth -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-database text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Earth</h3>
+                        <p class="text-gray-600">Data preprocessing and preparation</p>
+                    </div>
+                    <!-- Mars -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-cogs text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Mars</h3>
+                        <p class="text-gray-600">Model training and evaluation</p>
+                    </div>
+                    <!-- Jupiter -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-sliders-h text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Jupiter</h3>
+                        <p class="text-gray-600">Hyperparameter tuning</p>
+                    </div>
+                    <!-- Saturn -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-server text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Saturn</h3>
+                        <p class="text-gray-600">Model deployment and scaling</p>
+                    </div>
+                    <!-- Uranus -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-eye text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Uranus</h3>
+                        <p class="text-gray-600">Model monitoring and maintenance</p>
+                    </div>
+                    <!-- Neptune -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-chart-bar text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Neptune</h3>
+                        <p class="text-gray-600">Data visualization and report generation</p>
+                    </div>
+                    <!-- Pluto -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-project-diagram text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pluto</h3>
+                        <p class="text-gray-600">Knowledge graph construction and management</p>
+                    </div>
+                    <!-- Additional AI Modules -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-comments text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Ceres</h3>
+                        <p class="text-gray-600">Chatbot development and integration</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-microphone text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Eris</h3>
+                        <p class="text-gray-600">Speech recognition and synthesis</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-image text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Haumea</h3>
+                        <p class="text-gray-600">Image and video processing</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-folder text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Makemake</h3>
+                        <p class="text-gray-600">Document classification and clustering</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-exclamation-triangle text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Gonggong</h3>
+                        <p class="text-gray-600">Anomaly detection and fraud prevention</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Sedna</h3>
+                        <p class="text-gray-600">Time series analysis and forecasting</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-thumbs-up text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Quaoar</h3>
+                        <p class="text-gray-600">Recommendation system and personalization</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-user-circle text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Orcus</h3>
+                        <p class="text-gray-600">User behavior analysis and profiling</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-pen-fancy text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Ixion</h3>
+                        <p class="text-gray-600">Content generation and curation</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-user-shield text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Varuna</h3>
+                        <p class="text-gray-600">Data privacy and security</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-robot text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Triton</h3>
+                        <p class="text-gray-600">Virtual assistant development and integration</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-layer-group text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Titania</h3>
+                        <p class="text-gray-600">Multi-modal processing</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-stream text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Oberon</h3>
+                        <p class="text-gray-600">Real-time and stream data processing</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-language text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Ariel</h3>
+                        <p class="text-gray-600">Machine translation and localization</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-question-circle text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Umbriel</h3>
+                        <p class="text-gray-600">Question answering and knowledge retrieval</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-search text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Miranda</h3>
+                        <p class="text-gray-600">Exploratory data analysis and visualization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 class="text-3xl font-bold mb-8">Usage & Deployment</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-4">Quick Start</h3>
+                <div class="bg-gray-800 text-white p-4 rounded-lg mb-6">
+                    <pre class="text-sm">
+from pathos import run
+
+args = {
+    'function': 'tritonvirtualassistant_development',
+    'input': 'path/to/input',
+    'output': 'path/to/output'
+}
+run.main(args)</pre>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4">Docker Deployment</h3>
+                <div class="bg-gray-800 text-white p-4 rounded-lg mb-6">
+                    <pre class="text-sm">
+# Build the Docker image
+docker build -t pathos .
+
+# Run the container
+docker run -p 80:80 pathos
+
+# Make API requests
+GET http://localhost:80/run/mercurynlpanalysis/hello</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2024 PaTHos Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: videocourts-service
+spec:
+  selector:
+    app: videocourts
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

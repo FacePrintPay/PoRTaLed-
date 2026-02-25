@@ -1,0 +1,109 @@
+{
+  "tasks": [
+    {
+      "type": "code_generation",
+      "task_id": "example_task_1",
+      "requirements": {
+        "programming_language": "python",
+        "project_type": "web_application",
+        "framework": "flask",
+        "features": [
+          "user_authentication",
+          "database_integration",
+          "api_endpoints"
+        ]
+      },
+      "specifications": {
+        "database": {
+          "type": "postgresql",
+          "models": [
+            "User",
+            "Profile",
+            "Post"
+          ]
+        },
+        "api_version": "v1",
+        "authentication": {
+          "type": "jwt",
+          "features": [
+            "login",
+            "register",
+            "password_reset"
+          ]
+        }
+      }
+    },
+    {
+      "type": "syntax_check",
+      "task_id": "example_task_2",
+      "requirements": {
+        "programming_language": "python",
+        "files": [
+          "app.py",
+          "models.py",
+          "views.py"
+        ],
+        "rules": {
+          "max_line_length": 88,
+          "ignore_rules": [
+            "E203",
+            "W503"
+          ]
+        }
+      }
+    },
+    {
+      "type": "performance_optimization",
+      "task_id": "example_task_3",
+      "requirements": {
+        "programming_language": "python",
+        "target_metrics": {
+          "response_time": "< 100ms",
+          "memory_usage": "< 100MB",
+          "cpu_usage": "< 50%"
+        },
+        "optimization_areas": [
+          "database_queries",
+          "api_response_time",
+          "caching"
+        ]
+      }
+    },
+    {
+      "type": "full_pipeline",
+      "task_id": "example_task_4",
+      "requirements": {
+        "programming_language": "python",
+        "project_type": "api_service",
+        "framework": "fastapi",
+        "features": [
+          "crud_operations",
+          "authentication",
+          "rate_limiting"
+        ],
+        "optimization": {
+          "performance": true,
+          "security": true,
+          "code_quality": true
+        }
+      },
+      "pipeline_order": [
+        "Earth",
+        "Moon",
+        "Sun"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Example tasks for the AI Metaverse system",
+    "created_at": "2024-01-20T10:00:00Z",
+    "author": "AI Metaverse Team"
+  },
+  "execution_preferences": {
+    "parallel_execution": true,
+    "priority": "normal",
+    "timeout": 3600,
+    "retry_count": 3
+  }
+}

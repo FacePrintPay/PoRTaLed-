@@ -1,0 +1,1 @@
+.spacer--small{height:20px}.spacer--medium{height:60px}@media(min-width: 1081px){.spacer--large{height:150px}}@media(max-width: 1080px){.spacer--large{height:80px}}@media(max-width: 599px){.spacer--large{height:40px}}.spacer--bg-grey{background-color:#f8f9fa}
